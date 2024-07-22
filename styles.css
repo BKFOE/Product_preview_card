@@ -108,10 +108,13 @@ img{
     flex-direction: row;
     align-items: center;
     border-radius: 8px;
-    padding: 15px 60px;
+    padding: 15px 59px;
     max-width: 234px;
     max-height: 47px;
     transition: 0.3s;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 4%;
 }
 
 .cart-button:hover{
@@ -119,4 +122,6 @@ img{
     cursor: pointer;
 }
 
-
+svg{
+    margin-right: 10px;
+}
