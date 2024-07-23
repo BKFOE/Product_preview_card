@@ -41,10 +41,15 @@ body{
     max-width: 600px;
 }
 
-img{
+.image-full{
+    display: block;
     border-radius: 2% 0 0 2%;
     height: 100%;
     width: 20rem;
+}
+
+.image_mobile{
+    display: none;
 }
 
 #card-content{
@@ -124,4 +129,73 @@ img{
 
 svg{
     margin-right: 10px;
+}
+
+@media (max-width: 576px) and (min-width:320px) { 
+    #card{
+        display: flex;
+        flex-direction: column;
+        max-width: 290px;
+        
+    }
+
+    .image-full{
+        display: none;
+    }
+
+    .image_mobile{
+        display: block;
+        border-radius: 2% 2% 0 0;
+        width: 100%;
+        max-height: 200px;
+    }
+
+    #card-content{
+        padding: 20px;
+    }
+
+    #category{
+        padding: 0 0 15px;
+        letter-spacing: 34%;
+        font-weight: 500;
+        line-height: 23px;
+        font-size: 13px;
+        opacity: 70;
+    }
+
+    #header{
+        font-size: 26px;
+        letter-spacing: 2%;
+        line-height: 27px;
+        padding-bottom: 20px;
+    }
+
+    #description{
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 6%;
+        font-weight: 500;
+        opacity: 70%;
+    }
+
+    #price{
+        padding-bottom: 20px;
+    }
+
+    .new-price{
+        font-size: 28px;
+        line-height: 21px;
+        letter-spacing: 5%;
+    }
+
+    .markdown{
+        font-size: 10;
+        line-height: 22px;
+        letter-spacing: 5%;
+    }
+
+    .cart-button{ 
+        justify-content: center;
+    }
+
 }
